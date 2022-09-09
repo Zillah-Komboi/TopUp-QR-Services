@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TopUp QR Services</string>
+    <string name="action_settings">Settings</string>
+    <string name="transfer_credit">Transfer Credit </string>
+    <string name="check_balance"> Check Balance </string>
+    <string name="top_up"> Top Up Balance </string>
+</resources>

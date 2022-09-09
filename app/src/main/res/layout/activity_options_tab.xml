@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OptionsTab">
+
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="242dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="66dp"
+        android:contentDescription="Vodafone Logo"
+        app:layout_constraintBottom_toTopOf="@+id/topup_opt_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vodafone" />
+
+    <Button
+        android:id="@+id/transfer_opt_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="127dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:rotationX="0"
+        android:text="@string/transfer_credit"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkbal_opt_btn" />
+
+    <Button
+        android:id="@+id/checkbal_opt_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="68dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:rotationX="0"
+        android:text="@string/check_balance"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/transfer_opt_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topup_opt_btn" />
+
+    <Button
+        android:id="@+id/topup_opt_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="58dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:rotationX="0"
+        android:text="@string/top_up"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/checkbal_opt_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
